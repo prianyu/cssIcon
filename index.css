@@ -867,3 +867,35 @@ body {
 	border-width: .25em 0;
 	background-clip: content-box;
 }
+/* rss */
+.css-icon-rss{
+	width: .5em;
+	height: .5em;
+	background: #000;
+	border-radius: 50%;
+	margin-top: 1.5em;
+	margin-left: -1.5em;
+}
+.css-icon-rss:before,.css-icon-rss:after{
+	position: absolute;
+	border: .4em solid;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	transform: rotate(-45deg);
+	content: '';
+}
+.css-icon-rss:before{
+	top: -.7em;
+	left: -1.1em;
+	width: 1.5em;
+	height: 1.5em;
+}
+.css-icon-rss:after{
+	top: -1.4em;
+	left: -1.9em;
+	width: 3em;
+	height: 3em;
+}
+
