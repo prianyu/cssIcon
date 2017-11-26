@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body {
+		padding: 50px;
+		background: #eee;
+	}
+	div{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	.circle,.ellipse {
+		width: 100px;
+		height: 100px;
+		background: #249ff1;
+		border-radius: 50%;
+	}
+	.ellipse {
+		width: 150px;
+		background: #ff9e01;
+	}
+
+	.triangle1 {/*锐角三角形*/
+		width: 0;
+		height: 0;
+		border-top:50px solid transparent;
+		border-bottom:100px solid #249ff1;
+		border-left: 30px solid transparent;
+		border-right: 100px solid transparent;
+	}
+	.triangle2 {/*直角三角形*/
+		width: 0;
+		height: 0;
+		border-top: 80px solid transparent;
+		border-bottom: 80px solid #ff5b01;
+		border-left: 50px solid #ff5b01;
+		border-right:50px solid transparent;
+		}
+	.trapezoid {/*梯形*/
+		width:0;
+		height:0;
+		border-top:none;
+		border-right:80px solid transparent;
+		border-bottom:60px solid #13dbed;
+		border-left: 80px solid #13dbed;
+	}
+	</style>
+</head>
+<body>
+	<div class="triangle1"></div>
+	<div class="triangle2"></div>
+	<div class="trapezoid"></div>
+	<div class="circle"></div>
+	<div class="ellipse"></div>
+</body>
+</html>

@@ -35,7 +35,7 @@
 
 需要掌握的主要为以上内容，有些特殊的处理可能还需要其他一些CSS属性的应用。
 
-###几个说明
+### 几个说明
 
 + 由于大部分情况下图标的大小按照所处环境上下文的字体大小来决定，所以本文所有例子的大小单位大部分使用`em`，按照当前字号来设定大小
 + 有些`border`属性没有指明`border-color`,如`border-top: .4em solid`,是因为`border-color`默认继承了字体颜色
@@ -43,4 +43,74 @@
 
 ### 基本元素的绘制
 
-#### 
+### 用`border`属性绘制元素
+
+border除了作为简单的绘制边框以外，还可以绘制三角形，梯形，星形等任意的多边形，以下为绘制的两个三角形和梯形，更多的应用可以参考
+[border属性的多方位应用和实现自适应三角形](https://juejin.im/post/5a162d3ff265da43062a6e27)这篇文章，里面全面的介绍了用border绘制各种多边形。
+```html
+<div class="triangle1"></div>
+<div class="triangle2"></div>
+<div class="trapezoid"></div>
+```
+
+```css
+.triangle1 {/*锐角三角形*/
+	width: 0;
+	height: 0;
+	border-top:50px solid transparent;
+	border-bottom:100px solid #249ff1;
+	border-left: 30px solid transparent;
+	border-right: 100px solid transparent;
+}
+.triangle2 {/*直角三角形*/
+	width: 0;
+	height: 0;
+	border-top: 80px solid transparent;
+	border-bottom: 80px solid #ff5b01;
+	border-left: 50px solid #ff5b01;
+	border-right:50px solid transparent;
+	}
+.trapezoid {/*梯形*/
+	width:0;
+	height:0;
+	border-top:none;
+	border-right:80px solid transparent;
+	border-bottom:60px solid #13dbed;
+	border-left: 80px solid #13dbed;
+}
+
+```
+![](./images/border.png)
+
+
+#### 用`border-radius`绘制元素
+
+`border-radius`主要用于绘制圆点、圆形、椭圆、圆角矩形等形状，以下为简单绘制的两个图形。
+
+```html
+
+<div class="circle"></div>
+<div class="ellipse"><div>
+
+```
+
+```css
+.circle,.ellipse {
+	width: 100px;
+	height: 100px;
+	background: #249ff1;
+	border-radius: 50%;
+}
+.ellipse {
+	width: 150px;
+	background: #ff9e01;
+}
+```
+![](./images/circle.png)
+
+但`border-radius`属性实际上可以设置最多8个值，通过改变8个值可以得到许多意想不到的图像，如图（该图来源于[这里](http://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/)）
+
+![](./images/borderradius.gif) 
+![](./images/borderradius2.gif)
+
+更多关于`border-radius`属性的特点和应用请参考张鑫旭写的[《秋月何时了，CSS3 border-radius知多少？》](http://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/)
