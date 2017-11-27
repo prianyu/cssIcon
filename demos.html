@@ -10,7 +10,7 @@
 	}
 	div{
 		display: inline-block;
-		margin-right: 30px;
+		margin-right:30px;
 	}
 	.circle,.ellipse {
 		width: 100px;
@@ -47,6 +47,34 @@
 		border-bottom:60px solid #13dbed;
 		border-left: 80px solid #13dbed;
 	}
+	.plus {
+		width: 30px;
+		height: 30px;
+		margin-left: 50px;/*由于box-shadow不占空间，常常需要添加margin来校正位置*/
+		background: #000;
+		box-shadow: 0 -30px 0 red, 0 30px 0 red, -30px 0 0 red, 30px 0 0 red;
+	}
+	.target {
+		width: 30px;
+		height: 30px;
+		background: red;
+		border-radius: 50%;
+		margin-left: 50px;
+		box-shadow: 0 0 0 10px #fff, 0 0 0 20px red, 0 0 0 30px #fff, 0 0 0 40px red;
+	}
+	.gradient {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+    background-color: silver;
+		background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+		                  linear-gradient(155deg, #d00 23px, transparent 23px),
+		                  linear-gradient(335deg, #b00 23px, transparent 23px),
+		                  linear-gradient(155deg, #d00 23px, transparent 23px);
+		background-size: 58px 58px;
+		background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+	}
 	</style>
 </head>
 <body>
@@ -55,5 +83,8 @@
 	<div class="trapezoid"></div>
 	<div class="circle"></div>
 	<div class="ellipse"></div>
+	<div class="plus"></div>
+	<div class="target"></div>
+	<div class="gradient" style="display:block;margin-top:100px;"></div>
 </body>
 </html>

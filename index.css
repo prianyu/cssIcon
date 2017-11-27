@@ -924,27 +924,28 @@ body {
 }
 /* heart */
 .css-icon-heart{
-	margin-top: -2.8em;
-	margin-left: -.8em;
+	margin-top: 1.5em;
 	width:0;
 	height: 0;
 }
 .css-icon-heart:before,.css-icon-heart:after {
-	position: absolute;
-	width: 1em;
-	height: 1.6em;
-	background: #000;
-	border-radius: 50% 50% 0 0;
-	content: '';
+  position: absolute;
+  width: 1em;
+  height: 1.6em;
+  background: #000;
+  border-radius: 50% 50% 0 0;
+  content: '';
+  bottom: 0;
 }
 .css-icon-heart:before {
-	-webkit-transform: rotate(45deg);
-	-webkit-transform-origin: 0 100%;
-	left: -.3em;
+	-webkit-transform: rotate(48deg);
+  -webkit-transform-origin: 100% 100%;
+  right: 0;
 }
 .css-icon-heart:after {
-  -webkit-transform: rotate(-45deg);
-	-webkit-transform-origin: 100% 100%;
+  -webkit-transform: rotate(-48deg);
+  -webkit-transform-origin: 0 100%;
+  left: 0;
 }
 /* cup */
 .css-icon-cup {
