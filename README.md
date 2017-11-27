@@ -186,7 +186,7 @@ background-color: silver;
 
 关于线性渐变属性的用法，可以参考[这里](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 
-更多牛逼的例子可以观摩[这里](http://lea.verou.me/css3patterns/)
+更多牛逼的例子可以观摩《CSS SECRETS》作者绘制的渐变背景[点击这里](http://lea.verou.me/css3patterns/)
 
 
 ### 小试牛刀
@@ -352,9 +352,6 @@ cup:before {
 + `border-color`大部分情况下可以不设置，默认跟随图标当前所在文本的字体颜色
 + 图标的大小单位可以使用`em`，即相对于当前所在文本的字体大小进行计算，这应该符合与大部分场合，适应性也高，复用性强。（以上例子中均仅需要调整父级的字体大小即可以放大或缩小图标）
 
-以上所有图标的例子可以[点击这里下载看源码](https://github.com/prianyu/cssIcon/archive/master.zip)
-
-或者访问[github查看](https://github.com/prianyu/cssIcon),如果觉得有帮助记得给个star。
 
 
 ### 相关阅读
